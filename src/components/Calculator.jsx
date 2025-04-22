@@ -55,20 +55,20 @@ setError("");
 
 
    return(
-    <div className="container:flex flex-col border rounded w-90 h-90">
+    <div className="flex md:flex-col border rounded w-90 h-90 lg:justify-center ">
 <div className="flex flex-col px-6 py-6 justify-center items-center ">
         <h1 class="font-bold">Calculator</h1>
        
         <form onSubmit={handleSubmit} className="space-y-4">
         
-           <input type="text"
+           <input type="number"i
             value={fNumber} 
             placeholder="Enter first number"
             onChange ={(e) =>setFirstNumber(e.target.value)}
             className="w-full p-2 border rounded"
 
             />
-            <input type="text"
+            <input type="number"
              value={sNumber}
              placeholder="Enter second number"
              onChange ={(e) =>setSecondNumber(e.target.value)}
